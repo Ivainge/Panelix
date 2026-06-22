@@ -36,8 +36,8 @@ class Panelix : JavaPlugin() {
                 context.environment.propertySources.addFirst(
                     MapPropertySource(
                         "panelix", mapOf(
-                            "server.port" to "8080",
-                            "server.address" to "0.0.0.0",
+                            "server.port" to config.getString("server.port", "8080"),
+                            "server.address" to config.getString("server.address", "0.0.0.0"),
                             "spring.main.web-application-type" to "servlet",
                             "spring.web.resources.cache.period" to "0",
                             "spring.web.resources.static-locations" to staticLocations
