@@ -1,0 +1,5 @@
+name: Panelix
+version: '${version}'
+
+main: ru.ivainge.panelix.Panelix
+api-version: '1.21'
